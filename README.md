@@ -11,4 +11,6 @@ You will be prompted to install the shortcut during the first installation.
 ## CLI usage
 - `macos-focus-mode enable`
 - `macos-focus-mode enable -d 1` - set duration
+- `macos-focus-mode enable --silent` - suppress output
 - `macos-focus-mode disable`
+- `macos-focus-mode --help`
