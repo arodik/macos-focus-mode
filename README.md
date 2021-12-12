@@ -22,3 +22,8 @@ We don't install the shortcut automatically to give you more control
 - `macos-focus-mode enable --silent` - suppress output
 - `macos-focus-mode disable`
 - `macos-focus-mode --help`
+
+## FAQ
+### I want to use a different focus mode, not "Do not disturb". What should I do?
+You can open Shortcuts App, find the  macos-focus-mode shortcut, open it and change the type of the focus mode
+
