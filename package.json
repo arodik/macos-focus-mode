@@ -1,7 +1,8 @@
 {
   "name": "macos-focus-mode",
   "version": "0.0.1",
-  "description": "",
+  "description": "NodeJS lib for managing focus mode on your MacOS",
+  "keywords": ["do not disturb", "focus mode", "macos dnd"],
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -11,7 +12,6 @@
     "type": "git",
     "url": "git+https://github.com/arodik/macos-focus-mode.git"
   },
-  "keywords": [],
   "author": "Alexandr Rodik <alexandr.rodik@gmail.com>",
   "license": "MIT",
   "bugs": {
