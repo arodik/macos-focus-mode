@@ -18,14 +18,22 @@ export function installFocusModeShortcut() {
     execSync(`open ${PATH_TO_FOCUS_MODE_SHORTCUT}`);
 }
 
-export function enableFocusMode() {
+function runFocusModeShortcut(args) {
+    return runShortcut(`${FOCUS_MODE_SHORTCUT_NAME} <<< ${args}`);
+}
+
+export function enableFocusMode(durationInMinutes) {
     if (!isFocusModeShortcutInstalled()) {
-        throw new Error("Shortcut is not installed. Please, reinstall the package or install the shortcut manually");
+        throw new Error(`${FOCUS_MODE_SHORTCUT_NAME} shortcut is not installed. Please, reinstall the package or install the shortcut manually`);
     }
 
-    return runShortcut(`${FOCUS_MODE_SHORTCUT_NAME} <<< 'on'`);
+    if (durationInMinutes) {
+        return runFocusModeShortcut(durationInMinutes);
+    }
+
+    return runFocusModeShortcut('on');
 }
 
 export function disableFocusMode() {
-    return runShortcut(`${FOCUS_MODE_SHORTCUT_NAME} <<< 'off'`);
+    return runFocusModeShortcut('off');
 }
