@@ -1,6 +1,6 @@
 {
   "name": "macos-focus-mode",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "NodeJS library for managing focus mode on your MacOS",
   "keywords": [
     "do not disturb",
