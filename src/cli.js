@@ -38,7 +38,7 @@ function printError(errorText) {
     process.exit(1);
 }
 
-function runCli() {
+export function runCli() {
     const isEnableCommand = command === 'enable';
     const isDisableCommand = command === 'disable';
     const isInstallCommand = command === 'install';
@@ -81,5 +81,3 @@ function runCli() {
         return printHelp();
     }
 }
-
-runCli();

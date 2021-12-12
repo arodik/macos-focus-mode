@@ -8,6 +8,7 @@
     "macos dnd"
   ],
   "main": "index.js",
+  "bin": "./bin/cli.js",
   "type": "module",
   "scripts": {},
   "dependencies": {
