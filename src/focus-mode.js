@@ -22,6 +22,10 @@ function runFocusModeShortcut(args) {
     return runShortcut(`${FOCUS_MODE_SHORTCUT_NAME} <<< ${args}`);
 }
 
+/**
+ * @param {number} durationInMinutes
+ * @returns {string}
+ */
 export function enableFocusMode(durationInMinutes) {
     if (!isFocusModeShortcutInstalled()) {
         throw new Error(`${FOCUS_MODE_SHORTCUT_NAME} shortcut is not installed. Please, reinstall the package or install the shortcut manually`);

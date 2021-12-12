@@ -1,12 +1,19 @@
 {
   "name": "macos-focus-mode",
   "version": "0.0.1",
-  "description": "NodeJS lib for managing focus mode on your MacOS",
-  "keywords": ["do not disturb", "focus mode", "macos dnd"],
+  "description": "NodeJS library for managing focus mode on your MacOS",
+  "keywords": [
+    "do not disturb",
+    "focus mode",
+    "macos dnd"
+  ],
   "main": "index.js",
   "type": "module",
   "scripts": {
     "postinstall": "node bin/install.js"
+  },
+  "dependencies": {
+    "minimist": "^1.2.5"
   },
   "repository": {
     "type": "git",

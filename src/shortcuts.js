@@ -6,6 +6,10 @@ export function getInstalledShortcuts() {
     return result.split("\n").filter(Boolean);
 }
 
+/**
+ * @param {string} shortcutName
+ * @returns {string}
+ */
 export function runShortcut(shortcutName) {
     return execSync(`shortcuts run ${shortcutName}`, {encoding: 'utf8'});
 }
