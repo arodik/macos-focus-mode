@@ -7,8 +7,11 @@ You will be prompted to install the shortcut during the first installation.
 ## API
 - `enableFocusMode([DURATION_IN_MINUTES])`
 - `disableFocusMode()`
+- `installFocusModeShortcut()`
+- `isFocusModeShortcutInstalled()`
 
 ## CLI usage
+- `macos-focus-mode install`
 - `macos-focus-mode enable`
 - `macos-focus-mode enable -d 1` - set duration
 - `macos-focus-mode enable --silent` - suppress output

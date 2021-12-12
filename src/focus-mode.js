@@ -22,14 +22,20 @@ function runFocusModeShortcut(args) {
     return runShortcut(`${FOCUS_MODE_SHORTCUT_NAME} <<< ${args}`);
 }
 
+function ensureShortcutIsInstalled() {
+    if (isFocusModeShortcutInstalled()) {
+        return;
+    }
+
+    throw new Error(`${FOCUS_MODE_SHORTCUT_NAME} shortcut is not installed. Please, reinstall the package or install the shortcut manually`);
+}
+
 /**
  * @param {number} durationInMinutes
  * @returns {string}
  */
 export function enableFocusMode(durationInMinutes) {
-    if (!isFocusModeShortcutInstalled()) {
-        throw new Error(`${FOCUS_MODE_SHORTCUT_NAME} shortcut is not installed. Please, reinstall the package or install the shortcut manually`);
-    }
+    ensureShortcutIsInstalled();
 
     if (durationInMinutes) {
         return runFocusModeShortcut(durationInMinutes);
@@ -39,5 +45,7 @@ export function enableFocusMode(durationInMinutes) {
 }
 
 export function disableFocusMode() {
+    ensureShortcutIsInstalled();
+
     return runFocusModeShortcut('off');
 }

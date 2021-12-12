@@ -1,1 +1,1 @@
-export { enableFocusMode, disableFocusMode } from "./src/focus-mode.js";
+export { enableFocusMode, disableFocusMode, installFocusModeShortcut, isFocusModeShortcutInstalled } from "./src/focus-mode.js";
