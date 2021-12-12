@@ -1,1 +1,1 @@
-export { startFocusMode, stopFocusMode, isInFocusMode } from "./src/focus-mode.js";
+export { enableFocusMode, disableFocusMode } from "./src/focus-mode.js";

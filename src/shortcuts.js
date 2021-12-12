@@ -7,5 +7,5 @@ export function getInstalledShortcuts() {
 }
 
 export function runShortcut(shortcutName) {
-    return execSync(`shortcuts run ${shortcutName}`);
+    return execSync(`shortcuts run ${shortcutName}`, {encoding: 'utf8'});
 }

@@ -18,21 +18,14 @@ export function installFocusModeShortcut() {
     execSync(`open ${PATH_TO_FOCUS_MODE_SHORTCUT}`);
 }
 
-export function startFocusMode() {
+export function enableFocusMode() {
     if (!isFocusModeShortcutInstalled()) {
         throw new Error("Shortcut is not installed. Please, reinstall the package or install the shortcut manually");
     }
 
-    runShortcut(`${FOCUS_MODE_SHORTCUT_NAME} <<< 'on'`);
+    return runShortcut(`${FOCUS_MODE_SHORTCUT_NAME} <<< 'on'`);
 }
 
-export function stopFocusMode() {
-    runShortcut(`${FOCUS_MODE_SHORTCUT_NAME} <<< 'off'`);
-}
-
-export function isInFocusMode() {
-    const output = execSync('defaults read com.apple.controlcenter "NSStatusItem Visible FocusModes"', {encoding: "utf8"});
-    const [result, ] = output.split("\n");
-    console.log(JSON.stringify(result));
-    return result === '1';
+export function disableFocusMode() {
+    return runShortcut(`${FOCUS_MODE_SHORTCUT_NAME} <<< 'off'`);
 }
