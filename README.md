@@ -1,4 +1,4 @@
-# macos-focus-mode
+# macos-focus-mode 🧘
 NodeJS library and CLI for managing focus mode on your MacOS
 
 `npm i macos-focus-mode`
