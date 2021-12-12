@@ -9,9 +9,7 @@
   ],
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "postinstall": "node bin/install.js"
-  },
+  "scripts": {},
   "dependencies": {
     "minimist": "^1.2.5"
   },
