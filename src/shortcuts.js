@@ -1,0 +1,11 @@
+import {execSync} from "child_process";
+
+export function getInstalledShortcuts() {
+    const result = execSync("shortcuts list", {encoding: 'utf8'});
+
+    return result.split("\n").filter(Boolean);
+}
+
+export function runShortcut(shortcutName) {
+    return execSync(`shortcuts run ${shortcutName}`);
+}

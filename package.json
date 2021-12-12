@@ -1,0 +1,21 @@
+{
+  "name": "macos-focus-mode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "postinstall": "node bin/install.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arodik/macos-focus-mode.git"
+  },
+  "keywords": [],
+  "author": "Alexandr Rodik <alexandr.rodik@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arodik/macos-focus-mode/issues"
+  },
+  "homepage": "https://github.com/arodik/macos-focus-mode#readme"
+}
