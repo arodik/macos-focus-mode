@@ -3,9 +3,9 @@ NodeJS library and CLI for managing focus mode on your MacOS
 
 It uses MacOS shortcuts functionality under the hood, please read the corresponding section below to use it correctly
 
+## JS usage
 `npm i macos-focus-mode`
 
-## JS usage
 ```js
 import { enableFocusMode } from 'macos-focus-mode';
 
@@ -21,6 +21,8 @@ The library exports the following methods:
 We don't install the shortcut automatically to give you more control
 
 ## CLI usage
+`npm i -g macos-focus-mode`
+
 - `macos-focus-mode install`
 - `macos-focus-mode enable`
 - `macos-focus-mode enable -d 1` - set duration
