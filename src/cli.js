@@ -62,7 +62,7 @@ export function runCli() {
             printError(e.message);
         }
 
-        printInfo(duration ? `Focus mode enabled for ${pluralize(1, 'minute')}` : 'Focus mode enabled');
+        printInfo(duration ? `Focus mode enabled for ${pluralize(duration, 'minute')}` : 'Focus mode enabled');
         return;
     }
 
